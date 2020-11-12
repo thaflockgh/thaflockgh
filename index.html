@@ -15,15 +15,34 @@
         p {
             text-align: center;
         }
+        .container { 
+        height: 200px;
+        position: relative;
+        border: 3px solid green; 
+        }
+
+        .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        }
     </style>
 </head>
 
 <body>
     <img src="everyone.jpg" alt="Smiley face">
-    <audio controls>
-        <source src="ryan.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <div class="container">
+        <div class="vertical-center">
+            <audio controls>
+                <source src="ryan.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </div>
+    
+    
     <p>
         <p><font size ="500"><a href="http://lilyoda.com/">BIG things happening soon!</a></font></p>
     </p>
